@@ -44,7 +44,7 @@ CREATE TABLE un_countries
     ( country_id    CHAR(2)
       CONSTRAINT  un_country_id_nn NOT NULL
     , country_name  VARCHAR2(40)
-	, indep_date	DATE
+    , indep_date	DATE
     , region_id     NUMBER
     , CONSTRAINT   un_country_c_id_pk
                 PRIMARY KEY (country_id)
@@ -70,9 +70,9 @@ CREATE TABLE un_hdi_2013
 		CHECK (hdi < 1.0)
     , hdi_change       NUMBER(4,3)
     , development      VARCHAR2(10)
-	, country_id       CHAR(2)
-	, updated_date     DATE
-	, updated_by       VARCHAR2(15)
+    , country_id       CHAR(2)
+    , updated_date     DATE
+    , updated_by       VARCHAR2(15)
     );
 
 ALTER TABLE un_hdi_2013
